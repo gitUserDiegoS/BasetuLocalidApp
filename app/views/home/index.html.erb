@@ -1,33 +1,51 @@
-<section>
-	<article class="article_map">
+
+
+  <div class="section">
+	<div class="row">
 		
-	</article>
-	<article class="articleInfo">
-		<h2>¿Qué es Lorem Ipsum?</h2><br>
-		<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-		<p>El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
-	</article>
-</section>
-<section>
-	<article class="article_map">
+		<div class="col s12 l12">
+				<article class="infoHome">
+					<h2>¿Qué es tuLocalidapp?</h2><br>
+					<p>Es una herramienta para los habitantes de la localidad candelaria, en donde podrás cumplir el derecho de veedor social enfocados en el sector de obras públicas, obtendrás información acerca de los proyectos de obras publicas que se desarrollan actualmente, asi mismo podras pedir información o reportar una necesidad a través de las redes sociales de los entes respectivos del estado.</p>
+				
+				</article>
+		</div>
 		
-	</article>
-	<article class="articleInfo">
-		<h2>¿Qué es Lorem Ipsum?</h2><br>
-		<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-		<p>El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
-	</article>
-</section>
-<section>
-	<article class="article_map">
+	</div>
+   </div>
+
+   <div class="section">
 		
-	</article>
-	<article class="articleInfo">
-		<h2>¿Qué es Lorem Ipsum?</h2><br>
-		<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-		<p>El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
-	</article>
-</section>
+
+		<div class="row">
+				<div class="col s12 l6">
+						<article class="article_map">
+							
+						</article>
+				</div>
+
+				<div class="btnLogin col s12 l6 m12">
+
+				<% if user_signed_in? %>
+				<h2>Reporta o publica !</h2>
+        		<p>Reporta para solicitar informacion o, publica una nueva idea para construir localidad en pro de mejora !!! Sé un veedor ciudadano</p>
+        <% else %>
+                	<div class="col s12">Inicia sesión !</div>
+					<div class="botonesLogin">
+					<%= link_to "Iniciar sesión",new_user_session_path, class: 'waves-effect waves-light btn'%>
+					<%= link_to "Registrarse", new_user_registration_path, class: 'waves-effect waves-light btn'%>
+					<!--<a class="waves-effect waves-light btn"><i class="material-icons right">assignment_ind</i>Iniciar sesión</a>
+					<a class="waves-effect waves-light btn"><i class="material-icons right">assignment</i>registrate</a>-->
+					</div>
+        <% end %>
+				
+				</div>
+				
+		</div>
+	</div>
+
+	
+
 
 
 
