@@ -42,6 +42,12 @@ gem 'jquery-rails'
 
 gem 'material_icons'
 # End required materialize
+
+
+gem 'pg', '~> 1.0'
+gem 'rails_12factor', '~> 0.0.3'
+
+
 #gem devise
 gem 'devise'
 
